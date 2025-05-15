@@ -32,7 +32,6 @@ export default function APP() {
     setRefreshing(true);
     await fetchData(20);
     setRefreshing(false);
-    console.log("");
   };
 
   const addPost = async () => {
