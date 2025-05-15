@@ -24,7 +24,6 @@ export default function App(){
             setUsername("");
             setPassword("");
             setError({});
-            console.log();
         }
     }
     return(
