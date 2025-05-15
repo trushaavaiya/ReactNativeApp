@@ -20,7 +20,7 @@ export default function App(){
     
     const  handleSubmit =() =>{
         if(validateForm()){
-            console.log("submitted",Username ,Password)
+            console.log("submitted to check",Username ,Password)
             setUsername("");
             setPassword("");
             setError({});
