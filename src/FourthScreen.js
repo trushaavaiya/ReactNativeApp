@@ -25,6 +25,7 @@ export default function APP() {
       console.error("Error fetching data:", error);
       setIsLoading(false);
       setError("Failed to fetch post list");
+      console.log();
     }
   }; // 👈 missing bracket was added here
 
