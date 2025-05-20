@@ -8,6 +8,23 @@ import OrderDetailsScreen from './OrderDetailsScreen';
 import WalletScreen from './WalletScreen';
 
 export default function App(){
+  const [selected, setSelected] = useState('Home');
+
+  const renderScreen = () => {
+    switch (selected) {
+      case 'Home':
+        return <HomeScreen />;
+      case 'Orders':
+        return <Orders />;
+      case 'OrderDetails':
+        return <OrderDetailsScreen />;
+      case 'Wallet':
+        return <WalletScreen />;
+      default:
+        return <HomeScreen />;
+    }
+  };
+
 
     return(
         <View style={{ flex: 1 }}>
