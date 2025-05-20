@@ -6,6 +6,7 @@ import HomeScreen from './HomeScreen';
 import Orders from './Orders';
 import OrderDetailsScreen from './OrderDetailsScreen';
 import WalletScreen from './WalletScreen';
+import HomeStack from './HomeStack';
 
 export default function App(){
   const [selected, setSelected] = useState('Home');
