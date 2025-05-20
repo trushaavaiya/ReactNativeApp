@@ -28,9 +28,10 @@ import {
 //import Form from './src/PracticeProgramm/1.Form';
 //import LoginScreen from './src/PracticeProgramm/LoginScreen';
 // import HomeScreen from './src/PracticeProgramm/HomeScreen';
- import Orders from './src/PracticeProgramm/Orders';
+//  import Orders from './src/PracticeProgramm/Orders';
 // import OrderDetailsScreen from './src/PracticeProgramm/OrderDetailsScreen';
 // import WalletScreen from './src/PracticeProgramm/WalletScreen';
+import Home from './src/PracticeProgramm/Home';
 
 
 
@@ -60,9 +61,10 @@ function App() {
       {/* <Form/> */}
       {/* <LoginScreen/> */}
       {/* <HomeScreen/> */}
-          <Orders/>  
+          {/* <Orders/>   */}
           {/* <OrderDetailsScreen/> */}
           {/* <WalletScreen /> */}
+          <Home />
       
        
       
