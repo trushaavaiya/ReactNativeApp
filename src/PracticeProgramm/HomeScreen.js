@@ -43,10 +43,15 @@ export default function HomeScreen(navigation ) {
 
         <View style={style.grid}>
           {categories.map((cat, index) => (
-            <TouchableOpacity key={index} style={style.categoryBox}>
-              <Image source={cat.icon} style={style.categoryicon} />
-              <Text style={style.categoryText}>{cat.title}</Text>
+            <TouchableOpacity
+            key={index}
+            style={style.categoryBox}
+            onPress={() => navigation.navigate('CategoryDetails', { title: cat.title })}
+            >
+            <Image source={cat.icon} style={style.categoryicon} />
+            <Text style={style.categoryText}>{cat.title}</Text>
             </TouchableOpacity>
+
           ))}
         </View>
 
