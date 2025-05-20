@@ -6,7 +6,9 @@ import Icon from 'react-native-vector-icons/Ionicons';
 export default function App(){
 
     return(
-
+        <View>
+            
+        </View>
     );
 }
 
