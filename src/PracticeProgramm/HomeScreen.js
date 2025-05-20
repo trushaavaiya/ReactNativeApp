@@ -13,7 +13,7 @@ const categories = [
   { title: 'Toys', icon: require('../../src/image/Toys.png') },
 ];
 
-export default function HomeScreen() {
+export default function HomeScreen(navigation ) {
   return (
     <SafeAreaView style={style.container}>
       <View style={style.header}>
