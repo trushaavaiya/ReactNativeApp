@@ -61,12 +61,7 @@ export default function HomeScreen() {
         </View>
       </ScrollView>
 
-      <View style={style.bottomNav}>
-        <Ionicons name="home" size={24} color="#2563eb" />
-        <Ionicons name="compass-outline" size={24} color="#aaa" />
-        <Ionicons name="cart-outline" size={24} color="#aaa" />
-        <Ionicons name="person-outline" size={24} color="#aaa" />
-      </View>
+      
     </SafeAreaView>
   );
 }
