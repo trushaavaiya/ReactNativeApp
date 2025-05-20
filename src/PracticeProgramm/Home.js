@@ -59,5 +59,19 @@ export default function App(){
 }
 
 const styles = StyleSheet.create({
+    bottomBar: {
+    flexDirection: 'row',
+    height: 60,
+    borderTopWidth: 1,
+    borderTopColor: '#ddd',
+    justifyContent: 'space-around',
+    alignItems: 'center',
+    backgroundColor: '#fff',
+  },
+  iconButton: {
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+
 
 });
