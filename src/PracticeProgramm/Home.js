@@ -21,7 +21,7 @@ export default function App(){
       case 'Wallet':
         return <WalletScreen />;
       default:
-        return <HomeScreen />;
+        return <Home/>;
     }
   };
 
