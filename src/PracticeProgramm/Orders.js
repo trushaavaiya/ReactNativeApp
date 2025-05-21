@@ -108,20 +108,7 @@ export default function Orders() {
         contentContainerStyle={{ paddingBottom: 80 }}
       />
 
-      <View style={styles.bottomNav}>
-        <TouchableOpacity>
-          <Ionicons name="home-outline" size={24} color="#999" />
-        </TouchableOpacity>
-        <TouchableOpacity>
-          <Ionicons name="search-outline" size={24} color="#999" />
-        </TouchableOpacity>
-        <TouchableOpacity>
-          <Ionicons name="list-outline" size={24} color="#00B894" />
-        </TouchableOpacity>
-        <TouchableOpacity>
-          <Ionicons name="person-outline" size={24} color="#999" />
-        </TouchableOpacity>
-      </View>
+    
     </View>
   );
 }
