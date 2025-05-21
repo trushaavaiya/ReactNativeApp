@@ -13,7 +13,7 @@ const categories = [
   { title: 'Toys', icon: require('../../src/image/Toys.png') },
 ];
 
-export default function HomeScreen(navigation ) {
+export default function HomeScreen({ navigation }) {
   return (
     <SafeAreaView style={style.container}>
       <View style={style.header}>
@@ -44,14 +44,13 @@ export default function HomeScreen(navigation ) {
         <View style={style.grid}>
           {categories.map((cat, index) => (
             <TouchableOpacity
-            key={index}
-            style={style.categoryBox}
-            onPress={() => navigation.navigate('CategoryDetails', { title: cat.title })}
+              key={index}
+              style={style.categoryBox}
+              onPress={() => navigation.navigate('CategoryDetailsScreen', { title: cat.title })}
             >
-            <Image source={cat.icon} style={style.categoryicon} />
-            <Text style={style.categoryText}>{cat.title}</Text>
+              <Image source={cat.icon} style={style.categoryicon} />
+              <Text style={style.categoryText}>{cat.title}</Text>
             </TouchableOpacity>
-
           ))}
         </View>
 
@@ -60,13 +59,10 @@ export default function HomeScreen(navigation ) {
           <Text style={style.showAll}>Show all</Text>
         </View>
 
-        
         <View style={style.productPlaceholder}>
           <Text style={{ color: '#999', textAlign: 'center' }}>Product list goes here...</Text>
         </View>
       </ScrollView>
-
-      
     </SafeAreaView>
   );
 }
@@ -111,7 +107,7 @@ const style = StyleSheet.create({
   },
   scrollContent: {
     paddingHorizontal: 16,
-    paddingBottom: 80, 
+    paddingBottom: 80,
   },
   banner: {
     width: "100%",
@@ -162,16 +158,4 @@ const style = StyleSheet.create({
     borderRadius: 10,
     marginBottom: 20,
   },
-  bottomNav: {
-    flexDirection: 'row',
-    justifyContent: 'space-around',
-    alignItems: 'center',
-    paddingVertical: 10,
-    borderTopWidth: 1,
-    borderColor: "#eee",
-    backgroundColor: '#fff',
-    position: 'absolute',
-    bottom: 0,
-    width: '100%',
-  }
 });
