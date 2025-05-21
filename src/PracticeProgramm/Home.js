@@ -29,7 +29,6 @@ export default function App() {
   const renderScreen = () => {
     switch (selected) {
       case 'Home':
-        // Instead of rendering HomeScreen directly, render the HomeStack Navigator
         return <HomeStack />;
       case 'Orders':
         return <Orders />;
