@@ -46,7 +46,7 @@ export default function HomeScreen({ navigation }) {
             <TouchableOpacity
             key={index}
             style={style.categoryBox}
-            onPress={() => navigation.navigate('CategoryDetails', { title: cat.title })} // navigate to CategoryDetailsScreen
+            onPress={() => navigation.navigate('CategoryDetails', { title: cat.title })} 
             >
             <Image source={cat.icon} style={style.categoryicon} />
             <Text style={style.categoryText}>{cat.title}</Text>
