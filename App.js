@@ -27,11 +27,12 @@ import {
 //  import ImageGallery from './src/8.ImageGallery/ImageGallery'
 //import Form from './src/PracticeProgramm/1.Form';
 //import LoginScreen from './src/PracticeProgramm/LoginScreen';
-// import HomeScreen from './src/PracticeProgramm/HomeScreen';
+//  import HomeScreen from './src/PracticeProgramm/HomeScreen';
 //  import Orders from './src/PracticeProgramm/Orders';
 // import OrderDetailsScreen from './src/PracticeProgramm/OrderDetailsScreen';
 // import WalletScreen from './src/PracticeProgramm/WalletScreen';
 import Home from './src/PracticeProgramm/Home';
+
 
 
 
