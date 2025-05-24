@@ -31,7 +31,8 @@ import {
 //  import Orders from './src/PracticeProgramm/Orders';
 // import OrderDetailsScreen from './src/PracticeProgramm/OrderDetailsScreen';
 // import WalletScreen from './src/PracticeProgramm/WalletScreen';
-import Home from './src/PracticeProgramm/Home';
+// import Home from './src/PracticeProgramm/Home';
+import Screen1 from './src/PracticeProgramm/Screen1';
 
 
 
@@ -65,7 +66,8 @@ function App() {
           {/* <Orders/>   */}
           {/* <OrderDetailsScreen/> */}
           {/* <WalletScreen /> */}
-          <Home />
+          {/* <Home /> */}
+              <Screen1/>
       
        
       
