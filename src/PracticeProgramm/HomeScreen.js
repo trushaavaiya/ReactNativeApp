@@ -13,7 +13,7 @@ const categories = [
   { title: 'Toys', icon: require('../../src/image/Toys.png') },
 ];
 
-export default function HomeScreen() {
+export default function HomeScreen({ navigation }) {
   return (
     <SafeAreaView style={style.container}>
       <View style={style.header}>
@@ -43,10 +43,15 @@ export default function HomeScreen() {
 
         <View style={style.grid}>
           {categories.map((cat, index) => (
-            <TouchableOpacity key={index} style={style.categoryBox}>
-              <Image source={cat.icon} style={style.categoryicon} />
-              <Text style={style.categoryText}>{cat.title}</Text>
+            <TouchableOpacity
+            key={index}
+            style={style.categoryBox}
+            onPress={() => navigation.navigate('CategoryDetails', { title: cat.title })} 
+            >
+            <Image source={cat.icon} style={style.categoryicon} />
+            <Text style={style.categoryText}>{cat.title}</Text>
             </TouchableOpacity>
+
           ))}
         </View>
 
@@ -55,18 +60,10 @@ export default function HomeScreen() {
           <Text style={style.showAll}>Show all</Text>
         </View>
 
-        
         <View style={style.productPlaceholder}>
           <Text style={{ color: '#999', textAlign: 'center' }}>Product list goes here...</Text>
         </View>
       </ScrollView>
-
-      <View style={style.bottomNav}>
-        <Ionicons name="home" size={24} color="#2563eb" />
-        <Ionicons name="compass-outline" size={24} color="#aaa" />
-        <Ionicons name="cart-outline" size={24} color="#aaa" />
-        <Ionicons name="person-outline" size={24} color="#aaa" />
-      </View>
     </SafeAreaView>
   );
 }
@@ -111,7 +108,7 @@ const style = StyleSheet.create({
   },
   scrollContent: {
     paddingHorizontal: 16,
-    paddingBottom: 80, 
+    paddingBottom: 80,
   },
   banner: {
     width: "100%",
@@ -162,16 +159,4 @@ const style = StyleSheet.create({
     borderRadius: 10,
     marginBottom: 20,
   },
-  bottomNav: {
-    flexDirection: 'row',
-    justifyContent: 'space-around',
-    alignItems: 'center',
-    paddingVertical: 10,
-    borderTopWidth: 1,
-    borderColor: "#eee",
-    backgroundColor: '#fff',
-    position: 'absolute',
-    bottom: 0,
-    width: '100%',
-  }
 });
